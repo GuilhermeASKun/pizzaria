@@ -36,17 +36,10 @@ public class PizzariaServiceImpl implements PizzariaService {
 
     @Override
         public void editar(UUID id, PizzaDTO pizzaDTO) {
-        System.err.println("editando" );
-        System.err.println(id.toString());
-        System.err.println(pizzaDTO.toString());
-
         Pizza pizzaRecuperada = this.obter(id);
-        System.err.println(pizzaRecuperada.toString());
-
         remover(id);
         pizzaRecuperada.pizzaDTO(pizzaDTO.getMassa(), pizzaDTO.getQueijo(), pizzaDTO.getMolho(), pizzaDTO.getSabor(), pizzaDTO.getTempoDePreparo());
         this.repository.add(pizzaRecuperada);
-
     }
 
 

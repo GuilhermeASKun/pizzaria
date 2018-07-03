@@ -23,16 +23,13 @@ public class PizzariaController {
 
     @PostMapping
     public ResponseEntity criar(PizzaDTO pizzaDTO) {
-        System.err.println(pizzaDTO.toString());
         Pizza pizzaGravada = this.pizzariaService.criar(pizzaDTO);
-        System.err.println(pizzaGravada.toString());
         return new ResponseEntity(pizzaGravada.toString(), HttpStatus.CREATED);
     }
 
     //@RequestMapping(value = "/teste", method = RequestMethod.GET)
     @GetMapping
     public Set<Pizza> listar(){
-        System.err.println("aaaa");
         return this.pizzariaService.listar();
     }
     @GetMapping("/findBy")
@@ -45,12 +42,9 @@ public class PizzariaController {
         return new ResponseEntity(HttpStatus.NO_CONTENT);
     }
     @PutMapping
-    public ResponseEntity editar(@RequestParam("id") UUID id, @RequestBody PizzaDTO pizzaDTO) {
-        System.err.println("id " + id.toString());
-        System.err.println("editar " + pizzaDTO.toString());
-
+    public ResponseEntity editar(@RequestParam("id")UUID id, @RequestBody PizzaDTO pizzaDTO) {
         this.pizzariaService.editar(id, pizzaDTO);
-                return new ResponseEntity("Editado com Sucesso!", HttpStatus.OK);
+        return new ResponseEntity("Editado com Sucesso!", HttpStatus.OK);
     }
 
 
