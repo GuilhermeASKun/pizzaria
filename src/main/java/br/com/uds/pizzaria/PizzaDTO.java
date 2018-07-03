@@ -1,4 +1,4 @@
-package pizzaria;
+package br.com.uds.pizzaria;
 
 public class PizzaDTO {
     private String massa;
@@ -53,5 +53,17 @@ public class PizzaDTO {
 
     public void setTempoDePreparo(int tempoDePreparo) {
         this.tempoDePreparo = tempoDePreparo;
+    }
+
+
+    @Override
+    public String toString() {
+        return "PizzaDTO{" +
+                "  massa='" + massa + '\'' +
+                ", queijo='" + queijo + '\'' +
+                ", molho='" + molho + '\'' +
+                ", sabor='" + sabor + '\'' +
+                ", tempoDePreparo=" + tempoDePreparo +
+                '}';
     }
 }

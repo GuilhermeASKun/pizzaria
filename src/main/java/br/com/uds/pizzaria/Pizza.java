@@ -1,4 +1,4 @@
-package pizzaria;
+package br.com.uds.pizzaria;
 
 import io.swagger.annotations.ApiModelProperty;
 

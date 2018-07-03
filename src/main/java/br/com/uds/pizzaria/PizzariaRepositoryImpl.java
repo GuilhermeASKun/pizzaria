@@ -1,4 +1,4 @@
-package pizzaria;
+package br.com.uds.pizzaria;
 
 import org.springframework.stereotype.Component;
 

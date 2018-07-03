@@ -1,4 +1,4 @@
-package pizzaria;
+package br.com.uds.pizzaria;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,7 +14,7 @@ public class PizzariaServiceImpl implements PizzariaService {
 
     @Override
     public Pizza criar(PizzaDTO pizzaDTO) {
-        return null;
+        return this.repository.save(pizzaDTO);
     }
 
     @Override
@@ -36,7 +36,13 @@ public class PizzariaServiceImpl implements PizzariaService {
 
     @Override
         public void editar(UUID id, PizzaDTO pizzaDTO) {
+        System.err.println("editando" );
+        System.err.println(id.toString());
+        System.err.println(pizzaDTO.toString());
+
         Pizza pizzaRecuperada = this.obter(id);
+        System.err.println(pizzaRecuperada.toString());
+
         remover(id);
         pizzaRecuperada.pizzaDTO(pizzaDTO.getMassa(), pizzaDTO.getQueijo(), pizzaDTO.getMolho(), pizzaDTO.getSabor(), pizzaDTO.getTempoDePreparo());
         this.repository.add(pizzaRecuperada);

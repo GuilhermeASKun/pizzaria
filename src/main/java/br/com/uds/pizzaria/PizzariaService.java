@@ -1,4 +1,4 @@
-package pizzaria;
+package br.com.uds.pizzaria;
 
 import java.util.Set;
 import java.util.UUID;
