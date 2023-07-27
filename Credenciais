@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-27T17:27:36.818Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="WN8ZT1lplPqXs0wU050v" version="21.6.5" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2023-07-27T17:51:26.646Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="H-6EHK0O-bDPn6-nhg69" version="21.6.5" type="github" pages="6">
   <diagram id="VAaJUuSZ67YjQGgvDGw5" name="DER">
     <mxGraphModel dx="2201" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -748,14 +748,58 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="POEHRes7V7-cpj6VdGNR-1" value="InsertPhysicalPaymentService" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=none;gradientColor=none;" vertex="1" parent="1">
-          <mxGeometry x="35" y="40" width="160" height="60" as="geometry" />
+          <mxGeometry x="35" y="40" width="181" height="86" as="geometry" />
         </mxCell>
         <mxCell id="POEHRes7V7-cpj6VdGNR-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;html=1;" vertex="1" parent="POEHRes7V7-cpj6VdGNR-1">
-          <mxGeometry y="26" width="160" height="8" as="geometry" />
+          <mxGeometry y="26" width="181" height="8" as="geometry" />
         </mxCell>
         <mxCell id="POEHRes7V7-cpj6VdGNR-4" value="+&amp;nbsp;insertPayment&lt;span style=&quot;background-color: initial;&quot;&gt;(): void&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;fontColor=default;" vertex="1" parent="POEHRes7V7-cpj6VdGNR-1">
-          <mxGeometry y="34" width="160" height="26" as="geometry" />
+          <mxGeometry y="34" width="181" height="26" as="geometry" />
         </mxCell>
+        <mxCell id="POEHRes7V7-cpj6VdGNR-5" value="+&amp;nbsp;updatePayments&lt;span style=&quot;background-color: initial;&quot;&gt;(): void&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;fontColor=default;" vertex="1" parent="POEHRes7V7-cpj6VdGNR-1">
+          <mxGeometry y="60" width="181" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="POEHRes7V7-cpj6VdGNR-6" value="PayerBranchesCredentialsRepository" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=none;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="309" y="40" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="POEHRes7V7-cpj6VdGNR-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;html=1;" vertex="1" parent="POEHRes7V7-cpj6VdGNR-6">
+          <mxGeometry y="26" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="POEHRes7V7-cpj6VdGNR-8" value="+&amp;nbsp;findAllPhysicalCredentials&lt;span style=&quot;background-color: initial;&quot;&gt;():&amp;nbsp;&lt;/span&gt;ArrayCollection" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;fontColor=default;" vertex="1" parent="POEHRes7V7-cpj6VdGNR-6">
+          <mxGeometry y="34" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="POEHRes7V7-cpj6VdGNR-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=11;fontColor=default;" edge="1" parent="1" source="POEHRes7V7-cpj6VdGNR-4" target="POEHRes7V7-cpj6VdGNR-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="POEHRes7V7-cpj6VdGNR-11" value="Adicionar o MerchantAccount no retorno" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=none;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="514" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="POEHRes7V7-cpj6VdGNR-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSize=11;fontColor=default;" edge="1" parent="1" source="POEHRes7V7-cpj6VdGNR-8" target="POEHRes7V7-cpj6VdGNR-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wtx_dHmitF-Yv3RPaoXm-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" edge="1" parent="1" source="POEHRes7V7-cpj6VdGNR-13" target="wtx_dHmitF-Yv3RPaoXm-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="POEHRes7V7-cpj6VdGNR-13" value="Usar o merchantaccount para enviar na consulta :&amp;nbsp;getPaymentService-&amp;gt;getPaymentsScheduledByDate" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=none;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="92.5" y="168" width="291" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="POEHRes7V7-cpj6VdGNR-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSize=11;fontColor=default;" edge="1" parent="1" source="POEHRes7V7-cpj6VdGNR-5" target="POEHRes7V7-cpj6VdGNR-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="POEHRes7V7-cpj6VdGNR-15" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;Consulta as credenciais do IDTIPO =&amp;nbsp;PHYSICIST (2), ai é feito uma consulta em todas as transações destas credenciais.&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontFamily=Helvetica;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="171" y="481" width="408" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="wtx_dHmitF-Yv3RPaoXm-1" value="Salvar no&amp;nbsp;PayerTransactionsBuilder&amp;nbsp;o merchantaccount" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=none;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="131" y="256" width="214" height="58" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="OMcmJe6CzxLfC2Maij6Q" name="/pagamentos/{transactionId:\d+}/cancelamentos">
+    <mxGraphModel dx="1374" dy="837" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
