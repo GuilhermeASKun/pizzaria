@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-31T13:35:45.153Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="vNrx_aFy5lUjGSRIVt_A" version="21.6.5" type="github" pages="14">
+<mxfile host="app.diagrams.net" modified="2023-07-31T14:02:30.833Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="fPXvMT2BbLO-zHBRQLFP" version="21.6.5" type="github" pages="14">
   <diagram id="VAaJUuSZ67YjQGgvDGw5" name="DER">
     <mxGraphModel dx="2201" dy="803" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -449,6 +449,12 @@
               <mxPoint x="224" y="315" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Fld8L1sahVv2Qa5ivuJ4-1" value="Criar o update para alimentar o campo merchantaccount das transações existentes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="16" y="658" width="362" height="137" as="geometry" />
+        </mxCell>
+        <mxCell id="Fld8L1sahVv2Qa5ivuJ4-2" value="Criar o SQL para atualizar a tabela gazin.pagador_filiais_credenciais no novo formato (com MerchantAccount e com o IdUsuario).&lt;br&gt;Colocar como INATIVO os existentes e inserir os novos registros de credenciais." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="16" y="491" width="362" height="137" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -1171,7 +1177,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="qRRE3uUJP7K1RQUT7-JT-13" value="Usar o merchantaccount para enviar na consulta :&amp;nbsp;getPaymentService-&amp;gt;getPaymentsScheduledByDate" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=none;gradientColor=none;" vertex="1" parent="qRRE3uUJP7K1RQUT7-JT-1">
-          <mxGeometry x="92.5" y="168" width="291" height="45" as="geometry" />
+          <mxGeometry x="123" y="167.5" width="291" height="45" as="geometry" />
         </mxCell>
         <mxCell id="qRRE3uUJP7K1RQUT7-JT-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSize=11;fontColor=default;" edge="1" parent="qRRE3uUJP7K1RQUT7-JT-1" source="qRRE3uUJP7K1RQUT7-JT-5" target="qRRE3uUJP7K1RQUT7-JT-13">
           <mxGeometry relative="1" as="geometry" />
@@ -1180,7 +1186,7 @@
           <mxGeometry x="174" y="340" width="408" height="134" as="geometry" />
         </mxCell>
         <mxCell id="qRRE3uUJP7K1RQUT7-JT-16" value="Salvar no&amp;nbsp;PayerTransactionsBuilder&amp;nbsp;o merchantaccount" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=none;gradientColor=none;" vertex="1" parent="qRRE3uUJP7K1RQUT7-JT-1">
-          <mxGeometry x="131" y="256" width="214" height="58" as="geometry" />
+          <mxGeometry x="161.5" y="256" width="214" height="58" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -1205,20 +1211,20 @@
         <mxCell id="GtfHlvTiMMhHu64hq7---19" value="+&amp;nbsp;makeCancellation&lt;span style=&quot;background-color: initial;&quot;&gt;(cancelRequest):&amp;nbsp;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="GtfHlvTiMMhHu64hq7---5" vertex="1">
           <mxGeometry y="86" width="225" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="GtfHlvTiMMhHu64hq7---13" value="Utilizar o MerchantAccount ao consultar o&amp;nbsp;getPayerSubordinateService-&amp;gt;getSubordinateByBranchIdAndIdCnpjCpf" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=none;gradientColor=none;" parent="1" vertex="1">
-          <mxGeometry x="350" y="71" width="390" height="66" as="geometry" />
+        <mxCell id="GtfHlvTiMMhHu64hq7---13" value="Utilizar o UsuárioId e MerchantAccount ao consultar o&amp;nbsp;getPayerSubordinateService-&amp;gt;getSubordinateByBranchIdAndIdCnpjCpf" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=none;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="344" y="50" width="390" height="66" as="geometry" />
         </mxCell>
         <mxCell id="GtfHlvTiMMhHu64hq7---14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=11;fontColor=default;" parent="1" source="GtfHlvTiMMhHu64hq7---8" target="GtfHlvTiMMhHu64hq7---13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GtfHlvTiMMhHu64hq7---16" value="Adicionar o MerchantAccount no&amp;nbsp;CancellationsRequest" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=none;gradientColor=none;" parent="1" vertex="1">
-          <mxGeometry x="350" y="146" width="391" height="62" as="geometry" />
+        <mxCell id="GtfHlvTiMMhHu64hq7---16" value="Adicionar o&amp;nbsp;UsuárioId e&lt;br&gt;MerchantAccount no&amp;nbsp;CancellationsRequest" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=none;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="344" y="126" width="391" height="62" as="geometry" />
         </mxCell>
         <mxCell id="GtfHlvTiMMhHu64hq7---17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSize=11;fontColor=default;" parent="1" source="GtfHlvTiMMhHu64hq7---15" target="GtfHlvTiMMhHu64hq7---16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GtfHlvTiMMhHu64hq7---21" value="Adicionar o MerchantAccount no&amp;nbsp;putCancelService-&amp;gt;cancel($cancellationRequest)" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=none;gradientColor=none;" parent="1" vertex="1">
-          <mxGeometry x="350" y="228" width="391" height="62" as="geometry" />
+        <mxCell id="GtfHlvTiMMhHu64hq7---21" value="Adicionar o&amp;nbsp;&amp;nbsp;UsuárioId e&lt;br&gt;&amp;nbsp;MerchantAccount no&amp;nbsp;putCancelService-&amp;gt;cancel($cancellationRequest)" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=none;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="344" y="202" width="391" height="62" as="geometry" />
         </mxCell>
         <mxCell id="GtfHlvTiMMhHu64hq7---22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=11;fontColor=default;" parent="1" source="GtfHlvTiMMhHu64hq7---19" target="GtfHlvTiMMhHu64hq7---21" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -1240,7 +1246,7 @@
         <mxCell id="BgAgd2St7BKIn9P-bvnk-4" value="+&amp;nbsp;addSubordinateMerchantId&lt;span style=&quot;background-color: initial;&quot;&gt;(type): type&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="BgAgd2St7BKIn9P-bvnk-1" vertex="1">
           <mxGeometry y="34" width="241" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="BgAgd2St7BKIn9P-bvnk-8" value="Receber o MerchantAccount e passar na consulta:&amp;nbsp;getPayerSubordinateService-&amp;gt;getSubordinateByBranchIdAndIdCnpjCpf" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=none;gradientColor=none;" parent="1" vertex="1">
+        <mxCell id="BgAgd2St7BKIn9P-bvnk-8" value="Receber o&amp;nbsp;UsuárioId e&lt;br&gt;&amp;nbsp;MerchantAccount e passar na consulta:&amp;nbsp;getPayerSubordinateService-&amp;gt;getSubordinateByBranchIdAndIdCnpjCpf" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=none;gradientColor=none;" parent="1" vertex="1">
           <mxGeometry x="60" y="93" width="462" height="60" as="geometry" />
         </mxCell>
         <mxCell id="BgAgd2St7BKIn9P-bvnk-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=11;fontColor=default;" parent="1" source="BgAgd2St7BKIn9P-bvnk-4" target="BgAgd2St7BKIn9P-bvnk-8" edge="1">
