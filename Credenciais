@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-31T14:02:30.833Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="fPXvMT2BbLO-zHBRQLFP" version="21.6.5" type="github" pages="14">
+<mxfile host="app.diagrams.net" modified="2023-07-31T15:01:43.178Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="5W6Rx3UpK8YGaC1-BtwT" version="21.6.5" type="github" pages="15">
   <diagram id="VAaJUuSZ67YjQGgvDGw5" name="DER">
     <mxGraphModel dx="2201" dy="803" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -655,7 +655,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="ewkAn3NYlWntrEJWRsDA" name="pagamentos">
+  <diagram id="ewkAn3NYlWntrEJWRsDA" name="POST pagamentos">
     <mxGraphModel dx="1374" dy="803" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -933,7 +933,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="22D0kw_-CtLCgQLugst3" name="pagamentos/analises/api-cartao">
+  <diagram id="22D0kw_-CtLCgQLugst3" name="PUT pagamentos/analises/api-cartao">
     <mxGraphModel dx="1374" dy="803" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -1041,7 +1041,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="kPNRgm2nvnrs2AVYO2vq" name="operadoras/servicos">
+  <diagram id="kPNRgm2nvnrs2AVYO2vq" name="POST operadoras/servicos">
     <mxGraphModel dx="1374" dy="803" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -1085,7 +1085,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="jlk8Z9VGjwLcIO812tYZ" name="pagamentos/fisicos/braspag">
+  <diagram id="jlk8Z9VGjwLcIO812tYZ" name="POST pagamentos/fisicos/braspag">
     <mxGraphModel dx="1374" dy="803" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -1138,7 +1138,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="/pagamentos/cancelamentos/fisicos/braspag" id="njE0uxdIgAi6ZcYn_Nxg">
+  <diagram name="POST /pagamentos/cancelamentos/fisicos/braspag" id="njE0uxdIgAi6ZcYn_Nxg">
     <mxGraphModel dx="1374" dy="803" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="qRRE3uUJP7K1RQUT7-JT-0" />
@@ -1191,7 +1191,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="OMcmJe6CzxLfC2Maij6Q" name="pagamentos/{transactionId:\d+}/cancelamentos">
+  <diagram id="OMcmJe6CzxLfC2Maij6Q" name="PUT pagamentos/{transactionId:\d+}/cancelamentos">
     <mxGraphModel dx="1374" dy="803" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -1232,7 +1232,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="og6rHcAPJsN5iwjxyozt" name="braspag/pagamentos">
+  <diagram id="og6rHcAPJsN5iwjxyozt" name="POST braspag/pagamentos">
     <mxGraphModel dx="1374" dy="803" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -1255,7 +1255,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="Ylo0lvcPiohussDLN8CI" name="apicard/pagamentos">
+  <diagram id="Ylo0lvcPiohussDLN8CI" name="POST apicard/pagamentos">
     <mxGraphModel dx="1374" dy="803" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -1273,6 +1273,29 @@
           <mxGeometry x="60" y="93" width="462" height="60" as="geometry" />
         </mxCell>
         <mxCell id="WMImiFpq_iGeDAaK8muh-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=11;fontColor=default;" parent="1" source="WMImiFpq_iGeDAaK8muh-3" target="WMImiFpq_iGeDAaK8muh-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="PUT apicard/pagamentos/cancelamentos/{paymentId}" id="DuvMvonkPDAPxMx_ZHU4">
+    <mxGraphModel dx="1374" dy="803" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="F81ChGWQASmx3lnz5YhV-0" />
+        <mxCell id="F81ChGWQASmx3lnz5YhV-1" parent="F81ChGWQASmx3lnz5YhV-0" />
+        <mxCell id="F81ChGWQASmx3lnz5YhV-2" value="ConvertCancellationToApiCardMiddleware" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=none;gradientColor=none;" vertex="1" parent="F81ChGWQASmx3lnz5YhV-1">
+          <mxGeometry x="17" y="18" width="241" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F81ChGWQASmx3lnz5YhV-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;html=1;" vertex="1" parent="F81ChGWQASmx3lnz5YhV-2">
+          <mxGeometry y="26" width="241" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="F81ChGWQASmx3lnz5YhV-4" value="+&amp;nbsp;validateAndReturnPayment&lt;span style=&quot;background-color: initial;&quot;&gt;(type): type&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;fontColor=default;" vertex="1" parent="F81ChGWQASmx3lnz5YhV-2">
+          <mxGeometry y="34" width="241" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="F81ChGWQASmx3lnz5YhV-5" value="Receber o MerchantAccount e passar na consulta:&amp;nbsp;getPayerSubordinateService-&amp;gt;getSubordinateByBranchIdAndIdCnpjCpf" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=none;gradientColor=none;" vertex="1" parent="F81ChGWQASmx3lnz5YhV-1">
+          <mxGeometry x="60" y="93" width="462" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F81ChGWQASmx3lnz5YhV-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=11;fontColor=default;" edge="1" parent="F81ChGWQASmx3lnz5YhV-1" source="F81ChGWQASmx3lnz5YhV-4" target="F81ChGWQASmx3lnz5YhV-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
